@@ -28,8 +28,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onPrepared(MediaPlayer mp) {
                 mp.setLooping(true);
+
             }
         });
+
+
+
+
+
+
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        videoView.start();
 
     }
 
